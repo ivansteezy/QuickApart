@@ -6,6 +6,8 @@ TagManager:
   tags:
   - CharacterFire
   - CharacterWater
+  - RightShelf
+  - LeftShelf
   layers:
   - Default
   - TransparentFX
