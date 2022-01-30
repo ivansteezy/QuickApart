@@ -8,6 +8,7 @@ TagManager:
   - CharacterWater
   - RightShelf
   - LeftShelf
+  - Music
   layers:
   - Default
   - TransparentFX

@@ -64,11 +64,12 @@ public class CharacterMovement : MonoBehaviour, IPointerDownHandler, IDragHandle
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        //audioSource.PlayOneShot(audioPickUp);
+        audioSource.PlayOneShot(audioPickUp);
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        audioSource.PlayOneShot(audioDrop);
         rb.isKinematic = false;
         isDraggin = false;
     }
