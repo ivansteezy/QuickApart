@@ -56,8 +56,6 @@ public class CharacterMovement : MonoBehaviour, IPointerDownHandler, IDragHandle
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collisiono!");
-
         Vector2 inNormal = collision.contacts[0].normal;
         Vector2 newMovementDirection = Vector2.Reflect(movementDirection, inNormal);
 

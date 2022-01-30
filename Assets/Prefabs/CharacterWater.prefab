@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1355101057787720679}
   - component: {fileID: 1355101057787720678}
-  - component: {fileID: 1355101057787720697}
   - component: {fileID: 1355101057787720696}
   - component: {fileID: 1355101057787720699}
   - component: {fileID: 1355101057787720698}
@@ -87,22 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1355101057787720697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355101057787720700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37a5ecb21a31b8442b7e2f20cebdb954, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioPickUp: {fileID: 8300000, guid: 1abdf3d30d946b640a93694776459068, type: 3}
-  audioDrop: {fileID: 8300000, guid: 52c6d55d3f71f3440968983ea43d4d20, type: 3}
-  redShelveBoxCollider: {fileID: 6646442694456313766, guid: 56117f52a7f6dbc4a8b5e8b91fef4a49, type: 3}
-  blueShelveBoxCollider: {fileID: 692733372663470709, guid: 85295062212604141a83d3f608fec53e, type: 3}
 --- !u!61 &1355101057787720696
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -142,6 +125,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 2
+  isDraggin: 0
+  redShelveBoxCollider: {fileID: 0}
+  blueShelveBoxCollider: {fileID: 0}
+  audioPickUp: {fileID: 0}
+  audioDrop: {fileID: 0}
 --- !u!82 &1355101057787720698
 AudioSource:
   m_ObjectHideFlags: 0
