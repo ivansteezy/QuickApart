@@ -64,6 +64,7 @@ public class DropAreaDetector : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(this.gameObject.tag);
         StartCoroutine(WipeIfInside());
     }
 }
