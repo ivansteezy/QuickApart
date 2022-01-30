@@ -35,25 +35,6 @@ public class DropAreaDetector : MonoBehaviour
                 Collider2D[] overlap = Physics2D.OverlapAreaAll(characterCollider.bounds.min, characterCollider.bounds.max);
                 if (overlap.Length > 1 && Input.GetMouseButtonUp(0))
                 {
-                    //if(this.gameObject.tag == "RightShelf" && overlap.FirstOrDefault().gameObject.tag == "WaterCharacter")
-                    //{
-                    //    Debug.Log("Punto mas");
-                    //}
-
-                    //if (this.gameObject.tag == "LeftShelf" && overlap.FirstOrDefault().gameObject.tag == "FireCharacter")
-                    //{
-                    //    Debug.Log("Punto mas");
-                    //}
-
-                    //if (this.gameObject.tag == "RightShelf" && overlap.FirstOrDefault().gameObject.tag == "FireCharacter")
-                    //{
-                    //    Debug.Log("Game over");
-                    //}
-
-                    //if (this.gameObject.tag == "LeftShelf" && overlap.FirstOrDefault().gameObject.tag == "WaterCharacter")
-                    //{
-                    //    Debug.Log("Game over");
-                    //}
                     Debug.Log(this.gameObject.tag);
                     Destroy(overlap.FirstOrDefault().gameObject);
                 }
